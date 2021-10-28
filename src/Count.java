@@ -3,7 +3,7 @@ public class Count {
     private int rowCount;
     private int letterCount;
 
-    public Count(int myRowCount, String letter) {
+    public Count() {
         rowCount = 0;
         letterCount = 0;
 

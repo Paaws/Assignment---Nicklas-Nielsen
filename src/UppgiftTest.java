@@ -8,10 +8,9 @@ public class UppgiftTest {
     public void testGetRows() {
 
         //Arrange
-        int row = 0;
 
 
-        Count myRowCount = new Count(row, "hej");
+        Count myRowCount = new Count();
 
 
         //Act
@@ -28,9 +27,9 @@ public class UppgiftTest {
     public void testGetLetters() {
 
         //Arrange
-        String letter = "Hej";
 
-        Count myLetterCount = new Count(0,letter);
+
+        Count myLetterCount = new Count();
 
         //Act
         myLetterCount.increaseLetters("Hej");
@@ -49,7 +48,7 @@ public class UppgiftTest {
         //Arrange
         String letter = "stop";
 
-        Count myStopLookOut = new Count(0, letter);
+        Count myStopLookOut = new Count();
 
         //Act
 

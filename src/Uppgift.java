@@ -5,7 +5,7 @@ public class Uppgift {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
-        Count myCount = new Count(0, "");
+        Count myCount = new Count();
         String words;
 
         System.out.println("Input word please! Type 'Stop' to finish.");
