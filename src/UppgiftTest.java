@@ -30,7 +30,7 @@ public class UppgiftTest {
         //Arrange
         String letter = "Hej";
 
-        Count myLetterCount = new Count(0, letter);
+        Count myLetterCount = new Count(0,letter);
 
         //Act
         myLetterCount.increaseLetters("Hej");
@@ -40,7 +40,7 @@ public class UppgiftTest {
         //Assert
         int expected = 9;
 
-        assertEquals(expected, actual);
+        assertEquals(expected,actual);
     }
 
     @Test
@@ -58,6 +58,6 @@ public class UppgiftTest {
         //Assert
         boolean expected = true;
 
-        assertEquals(expected, actual);
+        assertEquals(expected,actual);
     }
 }

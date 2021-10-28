@@ -2,13 +2,15 @@ public class Count {
 
     private int rowCount;
     private int letterCount;
-    private String word;
-
 
     public Count(int myRowCount, String letter) {
-        rowCount += myRowCount + 1;
-        //letterCount = letter.length();
-        word = letter;
+        rowCount = 0;
+        letterCount = 0;
+
+    }
+
+    public void increaseRows() {
+        rowCount += 1;
     }
 
     public int getRows() {
@@ -16,18 +18,23 @@ public class Count {
     }
 
     public void increaseLetters(String letterIncrease) {
-        letterCount += letterIncrease.length();
+        letterCount = letterCount + letterIncrease.length();
     }
 
     public int getLetterAmount() {
         return letterCount;
     }
 
-    public boolean isStop(String letter) {
-        if (letter.contains("Stop") || letter.contains("stop")) {
+    public boolean isStop(String stop) {
+        if (stop.contains("Stop") || stop.contains("stop")) {
             return true;
         } else {
             return false;
         }
+    }
+
+    public void print() {
+        System.out.println("Amount of rows: " + rowCount);
+        System.out.println("Amount of letters: " + letterCount);
     }
 }
